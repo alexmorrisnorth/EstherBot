@@ -1,22 +1,29 @@
 {
-  "name": "Alex Bot",
-  "description": "Alex, bot.",
-  "keywords": ["Alex", "bot", "express"],
-  "website": "https://alexmorrisnorth.com",
-  "repository": "https://github.com/esthercrawford/smooch-bot-example",
-  "logo": "http://static1.squarespace.com/static/562fee6fe4b0300fd61a6957/562fefa9e4b03edf43290856/56324037e4b06090529cf83b/1446133816642/Screen+Shot+2015-07-28+at+2.46.10+PM.png?format=300w",
-  "env": {
-    "SMOOCH_APP_TOKEN": {
-      "description": "Your Smooch app token which is used to initialize the web widget.",
-      "required": true
-    },
-    "SMOOCH_KEY_ID": {
-      "description": "Your Smooch key ID, used to talk to the Smooch API",
-      "required": true
-    },
-    "SMOOCH_SECRET": {
-      "description": "Your Smooch secret, used to talk to the Smooch API",
-      "required": true
-    }
+  "name": "smooch-bot-example",
+  "version": "1.0.0",
+  "description": "Smooch Bot Example Apps",
+  "author": "Andrew Lavers <alavers@system42.net> (http://smooch.io/)",
+  "scripts": {
+    "start": "node heroku"
+  },
+  "license": "MIT",
+  "dependencies": {
+    "body-parser": "^1.15.0",
+    "express": "^4.13.4",
+    "hbs": "^4.0.0",
+    "jsonwebtoken": "^5.7.0",
+    "lodash": "^4.6.1",
+    "smooch-bot": "https://github.com/skhavari/smooch-bot.git",
+    "smooch-core": "^1.1.1"
+  },
+  "devDependencies": {
+    "gulp": "^3.9.1",
+    "gulp-nodemon": "^2.0.6",
+    "babel-eslint": "^6.0.0",
+    "esformatter": "^0.9.1",
+    "esformatter-braces": "^1.2.1",
+    "esformatter-dot-notation": "^1.3.1",
+    "esformatter-quotes": "^1.0.3",
+    "eslint": "^2.2.0"
   }
 }
